@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   
+
   
   <title>PHP基本语法[6]-运算符 | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="1.PHP算数运算符    1)+    加法    $x + $y    $x 与 $y 求和    2)-    减法    $x - $y    $x 与 $y 的差数    3)*    乘法    $x * $y    $x 与 $y 的乘积    4)&#x2F;    除法    $x &#x2F; $y    $x 与 $y 的商数    5)%    取模    $x % $y">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PHP基本语法[6]-运算符">
@@ -22,21 +23,14 @@
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
   
-    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="icon" href="/favicon.png">
   
   
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
   
 <link rel="stylesheet" href="/css/style.css">
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
 <meta name="generator" content="Hexo 6.1.0"></head>
 
 <body>
@@ -72,12 +66,11 @@
     </div>
   </div>
 </header>
-
       <div class="outer">
-        <section id="main"><article id="post-PHP基本语法[5]-运算符" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-PHP基本语法[5]-运算符" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/12/10/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%5B5%5D-%E8%BF%90%E7%AE%97%E7%AC%A6/" class="article-date">
-  <time class="dt-published" datetime="2020-12-10T10:50:26.000Z" itemprop="datePublished">2020-12-10</time>
+  <time datetime="2020-12-10T10:50:26.000Z" itemprop="datePublished">2020-12-10</time>
 </a>
     
   <div class="article-category">
@@ -91,22 +84,21 @@
       <header class="article-header">
         
   
-    <h1 class="p-name article-title" itemprop="headline name">
+    <h1 class="article-title" itemprop="name">
       PHP基本语法[6]-运算符
     </h1>
   
 
       </header>
     
-    <div class="e-content article-entry" itemprop="articleBody">
+    <div class="article-entry" itemprop="articleBody">
       
         <p>1.PHP算数运算符<br>    1)+    加法    $x + $y    $x 与 $y 求和<br>    2)-    减法    $x - $y    $x 与 $y 的差数<br>    3)*    乘法    $x * $y    $x 与 $y 的乘积<br>    4)&#x2F;    除法    $x &#x2F; $y    $x 与 $y 的商数<br>    5)%    取模    $x % $y    $x 除 $y 的余数<br>2.PHP赋值运算符<br>    1)x &#x3D; y    x &#x3D; y    右侧表达式为左侧运算数设置值。<br>    2)x +&#x3D; y    x &#x3D; x + y    加<br>    3)x -&#x3D; y    x &#x3D; x - y    减<br>    4)x *&#x3D; y    x &#x3D; x * y    乘<br>    5)x &#x2F;&#x3D; y    x &#x3D; x &#x2F; y    除<br>    6)x %&#x3D; y    x &#x3D; x % y    模数<br>3.PHP 字符串运算符<br>    1).    串接    $txt1 &#x3D; “Hello” $txt2 &#x3D; $txt1 . “ world!”    现在 $txt2 包含 “Hello world!”<br>    2).&#x3D;    串接赋值    $txt1 &#x3D; “Hello” $txt1 .&#x3D; “ world!”    现在 $txt1 包含 “Hello world!”<br>4.PHP递增&#x2F;递减运算符<br>    1)++$x    前递增    $x 加一递增，然后返回 $x<br>    2)$x++    后递增    返回 $x，然后 $x 加一递增<br>    3)–$x    前递减    $x 减一递减，然后返回 $x<br>    4)$x–    后递减    返回 $x，然后 $x 减一递减<br>5.PHP比较运算符<br>    1)&#x3D;&#x3D;    等于    $x &#x3D;&#x3D; $y    如果 $x 等于 $y，则返回 true。<br>    2)&#x3D;&#x3D;&#x3D;    全等（完全相同）    $x &#x3D;&#x3D;&#x3D; $y    如果 $x 等于 $y，且它们类型相同，则返回 true。<br>    3)!&#x3D;    不等于    $x !&#x3D; $y    如果 $x 不等于 $y，则返回 true。<br>    4)&lt;&gt;    不等于    $x &lt;&gt; $y    如果 $x 不等于 $y，则返回 true。<br>    5)!&#x3D;&#x3D;    不全等（完全不同）    $x !&#x3D;&#x3D; $y    如果 $x 不等于 $y，或它们类型不相同，则返回 true。<br>    6)&gt;    大于    $x &gt; $y    如果 $x 大于 $y，则返回 true。<br>    7)&lt;    小于    $x &lt; $y    如果 $x 小于 $y，则返回 true。<br>    8)&gt;&#x3D;    大于或等于    $x &gt;&#x3D; $y    如果 $x 大于或者等于 $y，则返回 true.<br>    9)&lt;&#x3D;    小于或等于    $x &lt;&#x3D; $y    如果 $x 小于或者等于 $y，则返回 true。<br>6.PHP逻辑运算符<br>    1)and    与    $x and $y    如果 $x 和 $y 都为 true，则返回 true。<br>    2)or    或    $x or $y    如果 $x 和 $y 至少有一个为 true，则返回 true。<br>    3)xor    异或    $x xor $y    如果 $x 和 $y 有且仅有一个为 true，则返回 true。<br>    4)&amp;&amp;    与    $x &amp;&amp; $y    如果 $x 和 $y 都为 true，则返回 true。<br>    5)||    或    $x || $y    如果 $x 和 $y 至少有一个为 true，则返回 true。<br>    6)!    非    !$x    如果 $x 不为 true，则返回 true。<br>7.PHP 数组运算符<br>    1)+    联合    $x + $y    $x 和 $y 的联合（但不覆盖重复的键）<br>    2)&#x3D;&#x3D;    相等    $x &#x3D;&#x3D; $y    如果 $x 和 $y 拥有相同的键&#x2F;值对，则返回 true。<br>    3)&#x3D;&#x3D;&#x3D;    全等    $x &#x3D;&#x3D;&#x3D; $y    如果 $x 和 $y 拥有相同的键&#x2F;值对，且顺序相同类型相同，则返回 true。<br>    4)!&#x3D;    不相等    $x !&#x3D; $y    如果 $x 不等于 $y，则返回 true。<br>    5)&lt;&gt;    不相等    $x &lt;&gt; $y    如果 $x 不等于 $y，则返回 true。<br>    6)!&#x3D;&#x3D;    不全等    $x !&#x3D;&#x3D; $y    如果 $x 与 $y 完全不同，则返回 true。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/12/10/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95[5]-%E8%BF%90%E7%AE%97%E7%AC%A6/" data-id="cl1c3sz1i0006dov99gga8pt9" data-title="PHP基本语法[6]-运算符" class="article-share-link">Share</a>
-      
+      <a data-url="http://example.com/2020/12/10/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95[5]-%E8%BF%90%E7%AE%97%E7%AC%A6/" data-id="cl1c3v4o50006cgv936e956v7" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" rel="tag">PHP基本语法</a></li></ul>
@@ -136,7 +128,6 @@
 
   
 </article>
-
 
 </section>
         
@@ -219,13 +210,11 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      
       &copy; 2022 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
-
     </div>
     <nav id="mobile-nav">
   
@@ -236,19 +225,19 @@
 </nav>
     
 
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
 
 
 <script src="/js/script.js"></script>
-
 
 
 

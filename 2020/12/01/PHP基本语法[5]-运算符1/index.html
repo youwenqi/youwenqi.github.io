@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   
+
   
   <title>PHP基本语法[5]-运算符1 | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="运算符概述:说白了就是一些符号，这些符号可以将变量或者数据执行某中运算!1.算术运算符1)+    $a&#x3D;1;    $b&#x3D;2;    $c&#x3D;$a+$b;    echo $c;2)-    第一个意思:减号    $a&#x3D;10;    $b&#x3D;2;    $c&#x3D;$a-$b;    echo $c;    第二个意思:    取反    $a">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PHP基本语法[5]-运算符1">
@@ -22,21 +23,14 @@
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
   
-    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="icon" href="/favicon.png">
   
   
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
   
 <link rel="stylesheet" href="/css/style.css">
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
 <meta name="generator" content="Hexo 6.1.0"></head>
 
 <body>
@@ -72,12 +66,11 @@
     </div>
   </div>
 </header>
-
       <div class="outer">
-        <section id="main"><article id="post-PHP基本语法[5]-运算符1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-PHP基本语法[5]-运算符1" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/12/01/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%5B5%5D-%E8%BF%90%E7%AE%97%E7%AC%A61/" class="article-date">
-  <time class="dt-published" datetime="2020-12-01T12:55:08.000Z" itemprop="datePublished">2020-12-01</time>
+  <time datetime="2020-12-01T12:55:08.000Z" itemprop="datePublished">2020-12-01</time>
 </a>
     
   <div class="article-category">
@@ -91,22 +84,21 @@
       <header class="article-header">
         
   
-    <h1 class="p-name article-title" itemprop="headline name">
+    <h1 class="article-title" itemprop="name">
       PHP基本语法[5]-运算符1
     </h1>
   
 
       </header>
     
-    <div class="e-content article-entry" itemprop="articleBody">
+    <div class="article-entry" itemprop="articleBody">
       
         <p>运算符<br>概述:说白了就是一些符号，这些符号可以将变量或者数据执行某中运算!<br>1.算术运算符<br>1)+<br>    $a&#x3D;1;<br>    $b&#x3D;2;<br>    $c&#x3D;$a+$b;<br>    echo $c;<br>2)-<br>    第一个意思:减号<br>    $a&#x3D;10;<br>    $b&#x3D;2;<br>    $c&#x3D;$a-$b;<br>    echo $c;<br>    第二个意思:<br>    取反<br>    $a&#x3D;1;<br>    $b&#x3D;-$a;<br>    echo $b;&#x2F;&#x2F;-1<br>    echo ‘<br />‘;<br>    echo $a;&#x2F;&#x2F;1<br>    注意:取反并不会影响到被取反变量本身的值!<br>3)<em>乘号<br>    $a&#x3D;4;<br>    $b&#x3D;2;<br>    $c&#x3D;$a</em>$b;<br>    echo $c;<br>4)&#x2F;除号.<br>    $a&#x3D;10;<br>    $b&#x3D;2;<br>    $c&#x3D;$a&#x2F;$b;<br>    echo $c;<br>5)号取模<br>    $a&#x3D;12;<br>    $b&#x3D;2;<br>    echo $a%$b;<br>6)++自增<br>    前++<br>    当在一个语句里而需要使用到被自增的变量的值的时候，前++会先执行自增,然后再返回自增之后的值!<br>    $a&#x3D;10;<br>    echo ++$a;&#x2F;&#x2F;11<br>    后++<br>    当在一个语句里面需要使用到被自增的变量的值的时候，后++会先返回变量的值然后再去执行自增<br>    $a&#x3D;10;<br>    &#x2F;&#x2F;++$a;&#x2F;&#x2F;$a&#x3D;$a+1;<br>    &#x2F;&#x2F;$a++;&#x2F;&#x2F;$a&#x3D;$a+1;<br>    echo $a++:&#x2F;&#x2F;echo $a;$a&#x3D;$a+1;<br>    echo ‘<br />‘;<br>    echo $a;&#x2F;&#x2F;11<br>    注意：<br>    $a&#x3D;10;<br>    ++$a;&#x2F;&#x2F;这种情况不需要用到自增变量值的时候，和后++无区别<br>    echo $a;<br>7)–自减<br>    前–<br>    $a&#x3D;10;<br>    &#x2F;&#x2F;$a–;&#x2F;&#x2F;$a&#x3D;$a-1;和–$a没区别;<br>    echo –$a;&#x2F;&#x2F;$a&#x3D;$a-1;echo $a;<br>    echo ‘<br />‘;<br>    echo $a;<br>    后–<br>    $a&#x3D;10;<br>    &#x2F;&#x2F;$a–;&#x2F;&#x2F;$a&#x3D;$a-1;和–$a没区别; .<br>    echo $a–;&#x2F;&#x2F;echo $a;$a&#x3D;$a-1;<br>    echo ‘<br />‘ ;<br>    echo $a;<br>    注意:自增或者自减是对变量而言的!</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/12/01/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95[5]-%E8%BF%90%E7%AE%97%E7%AC%A61/" data-id="cl1c3sz1n000adov9bgf08t5c" data-title="PHP基本语法[5]-运算符1" class="article-share-link">Share</a>
-      
+      <a data-url="http://example.com/2020/12/01/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95[5]-%E8%BF%90%E7%AE%97%E7%AC%A61/" data-id="cl1c3v4oa000acgv97erpd3ok" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" rel="tag">PHP基本语法</a></li></ul>
@@ -136,7 +128,6 @@
 
   
 </article>
-
 
 </section>
         
@@ -219,13 +210,11 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      
       &copy; 2022 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
-
     </div>
     <nav id="mobile-nav">
   
@@ -236,19 +225,19 @@
 </nav>
     
 
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
 
 
 <script src="/js/script.js"></script>
-
 
 
 
