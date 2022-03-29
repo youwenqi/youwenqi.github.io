@@ -122,6 +122,325 @@
 
 
   
+    <article id="post-PHP基本语法[5]-运算符" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/12/10/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%5B5%5D-%E8%BF%90%E7%AE%97%E7%AC%A6/" class="article-date">
+  <time class="dt-published" datetime="2020-12-10T10:50:26.000Z" itemprop="datePublished">2020-12-10</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/PHP/">PHP</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/12/10/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%5B5%5D-%E8%BF%90%E7%AE%97%E7%AC%A6/">PHP基本语法[6]-运算符</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>1.PHP算数运算符<br>    1)+    加法    $x + $y    $x 与 $y 求和<br>    2)-    减法    $x - $y    $x 与 $y 的差数<br>    3)*    乘法    $x * $y    $x 与 $y 的乘积<br>    4)&#x2F;    除法    $x &#x2F; $y    $x 与 $y 的商数<br>    5)%    取模    $x % $y    $x 除 $y 的余数<br>2.PHP赋值运算符<br>    1)x &#x3D; y    x &#x3D; y    右侧表达式为左侧运算数设置值。<br>    2)x +&#x3D; y    x &#x3D; x + y    加<br>    3)x -&#x3D; y    x &#x3D; x - y    减<br>    4)x *&#x3D; y    x &#x3D; x * y    乘<br>    5)x &#x2F;&#x3D; y    x &#x3D; x &#x2F; y    除<br>    6)x %&#x3D; y    x &#x3D; x % y    模数<br>3.PHP 字符串运算符<br>    1).    串接    $txt1 &#x3D; “Hello” $txt2 &#x3D; $txt1 . “ world!”    现在 $txt2 包含 “Hello world!”<br>    2).&#x3D;    串接赋值    $txt1 &#x3D; “Hello” $txt1 .&#x3D; “ world!”    现在 $txt1 包含 “Hello world!”<br>4.PHP递增&#x2F;递减运算符<br>    1)++$x    前递增    $x 加一递增，然后返回 $x<br>    2)$x++    后递增    返回 $x，然后 $x 加一递增<br>    3)–$x    前递减    $x 减一递减，然后返回 $x<br>    4)$x–    后递减    返回 $x，然后 $x 减一递减<br>5.PHP比较运算符<br>    1)&#x3D;&#x3D;    等于    $x &#x3D;&#x3D; $y    如果 $x 等于 $y，则返回 true。<br>    2)&#x3D;&#x3D;&#x3D;    全等（完全相同）    $x &#x3D;&#x3D;&#x3D; $y    如果 $x 等于 $y，且它们类型相同，则返回 true。<br>    3)!&#x3D;    不等于    $x !&#x3D; $y    如果 $x 不等于 $y，则返回 true。<br>    4)&lt;&gt;    不等于    $x &lt;&gt; $y    如果 $x 不等于 $y，则返回 true。<br>    5)!&#x3D;&#x3D;    不全等（完全不同）    $x !&#x3D;&#x3D; $y    如果 $x 不等于 $y，或它们类型不相同，则返回 true。<br>    6)&gt;    大于    $x &gt; $y    如果 $x 大于 $y，则返回 true。<br>    7)&lt;    小于    $x &lt; $y    如果 $x 小于 $y，则返回 true。<br>    8)&gt;&#x3D;    大于或等于    $x &gt;&#x3D; $y    如果 $x 大于或者等于 $y，则返回 true.<br>    9)&lt;&#x3D;    小于或等于    $x &lt;&#x3D; $y    如果 $x 小于或者等于 $y，则返回 true。<br>6.PHP逻辑运算符<br>    1)and    与    $x and $y    如果 $x 和 $y 都为 true，则返回 true。<br>    2)or    或    $x or $y    如果 $x 和 $y 至少有一个为 true，则返回 true。<br>    3)xor    异或    $x xor $y    如果 $x 和 $y 有且仅有一个为 true，则返回 true。<br>    4)&amp;&amp;    与    $x &amp;&amp; $y    如果 $x 和 $y 都为 true，则返回 true。<br>    5)||    或    $x || $y    如果 $x 和 $y 至少有一个为 true，则返回 true。<br>    6)!    非    !$x    如果 $x 不为 true，则返回 true。<br>7.PHP 数组运算符<br>    1)+    联合    $x + $y    $x 和 $y 的联合（但不覆盖重复的键）<br>    2)&#x3D;&#x3D;    相等    $x &#x3D;&#x3D; $y    如果 $x 和 $y 拥有相同的键&#x2F;值对，则返回 true。<br>    3)&#x3D;&#x3D;&#x3D;    全等    $x &#x3D;&#x3D;&#x3D; $y    如果 $x 和 $y 拥有相同的键&#x2F;值对，且顺序相同类型相同，则返回 true。<br>    4)!&#x3D;    不相等    $x !&#x3D; $y    如果 $x 不等于 $y，则返回 true。<br>    5)&lt;&gt;    不相等    $x &lt;&gt; $y    如果 $x 不等于 $y，则返回 true。<br>    6)!&#x3D;&#x3D;    不全等    $x !&#x3D;&#x3D; $y    如果 $x 与 $y 完全不同，则返回 true。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/12/10/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95[5]-%E8%BF%90%E7%AE%97%E7%AC%A6/" data-id="cl1c3sz1i0006dov99gga8pt9" data-title="PHP基本语法[6]-运算符" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" rel="tag">PHP基本语法</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-PHP基本语法[5]-运算符1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/12/01/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%5B5%5D-%E8%BF%90%E7%AE%97%E7%AC%A61/" class="article-date">
+  <time class="dt-published" datetime="2020-12-01T12:55:08.000Z" itemprop="datePublished">2020-12-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/PHP/">PHP</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/12/01/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%5B5%5D-%E8%BF%90%E7%AE%97%E7%AC%A61/">PHP基本语法[5]-运算符1</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>运算符<br>概述:说白了就是一些符号，这些符号可以将变量或者数据执行某中运算!<br>1.算术运算符<br>1)+<br>    $a&#x3D;1;<br>    $b&#x3D;2;<br>    $c&#x3D;$a+$b;<br>    echo $c;<br>2)-<br>    第一个意思:减号<br>    $a&#x3D;10;<br>    $b&#x3D;2;<br>    $c&#x3D;$a-$b;<br>    echo $c;<br>    第二个意思:<br>    取反<br>    $a&#x3D;1;<br>    $b&#x3D;-$a;<br>    echo $b;&#x2F;&#x2F;-1<br>    echo ‘<br />‘;<br>    echo $a;&#x2F;&#x2F;1<br>    注意:取反并不会影响到被取反变量本身的值!<br>3)<em>乘号<br>    $a&#x3D;4;<br>    $b&#x3D;2;<br>    $c&#x3D;$a</em>$b;<br>    echo $c;<br>4)&#x2F;除号.<br>    $a&#x3D;10;<br>    $b&#x3D;2;<br>    $c&#x3D;$a&#x2F;$b;<br>    echo $c;<br>5)号取模<br>    $a&#x3D;12;<br>    $b&#x3D;2;<br>    echo $a%$b;<br>6)++自增<br>    前++<br>    当在一个语句里而需要使用到被自增的变量的值的时候，前++会先执行自增,然后再返回自增之后的值!<br>    $a&#x3D;10;<br>    echo ++$a;&#x2F;&#x2F;11<br>    后++<br>    当在一个语句里面需要使用到被自增的变量的值的时候，后++会先返回变量的值然后再去执行自增<br>    $a&#x3D;10;<br>    &#x2F;&#x2F;++$a;&#x2F;&#x2F;$a&#x3D;$a+1;<br>    &#x2F;&#x2F;$a++;&#x2F;&#x2F;$a&#x3D;$a+1;<br>    echo $a++:&#x2F;&#x2F;echo $a;$a&#x3D;$a+1;<br>    echo ‘<br />‘;<br>    echo $a;&#x2F;&#x2F;11<br>    注意：<br>    $a&#x3D;10;<br>    ++$a;&#x2F;&#x2F;这种情况不需要用到自增变量值的时候，和后++无区别<br>    echo $a;<br>7)–自减<br>    前–<br>    $a&#x3D;10;<br>    &#x2F;&#x2F;$a–;&#x2F;&#x2F;$a&#x3D;$a-1;和–$a没区别;<br>    echo –$a;&#x2F;&#x2F;$a&#x3D;$a-1;echo $a;<br>    echo ‘<br />‘;<br>    echo $a;<br>    后–<br>    $a&#x3D;10;<br>    &#x2F;&#x2F;$a–;&#x2F;&#x2F;$a&#x3D;$a-1;和–$a没区别; .<br>    echo $a–;&#x2F;&#x2F;echo $a;$a&#x3D;$a-1;<br>    echo ‘<br />‘ ;<br>    echo $a;<br>    注意:自增或者自减是对变量而言的!</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/12/01/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95[5]-%E8%BF%90%E7%AE%97%E7%AC%A61/" data-id="cl1c3sz1n000adov9bgf08t5c" data-title="PHP基本语法[5]-运算符1" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" rel="tag">PHP基本语法</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-PHP基本语法[4]-常量" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/11/20/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%5B4%5D-%E5%B8%B8%E9%87%8F/" class="article-date">
+  <time class="dt-published" datetime="2020-11-20T13:56:10.000Z" itemprop="datePublished">2020-11-20</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/PHP/">PHP</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/11/20/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%5B4%5D-%E5%B8%B8%E9%87%8F/">PHP基本语法[4]-常量</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>四、常量<br>1.概念<br>    常量是用于临时( 只有在我们的程序的运行过程中才存在)存储值(数据)的容器。<br>2.定义和使用<br>    define(‘常量名称’,常量值)或者define(“常量名称”,常量值).<br>常量的命名:<br>    1)和变量一样只能包含字母数字下划线并且必须以字母或者下划线开头<br>    2)按照惯例常量名字总是大写的<br>    3)自定义的常量是严格区分大小写的!|<br>    defined()函数来检查是否定义了某个常量<br>3.常量和变量的区别<br>    1)常量前面没有美元符号($)<br>    2)常量只能用define()函数定义，不能通过赋值语句<br>    3)*******常量可以不用理会变量范围的规则而在任何地方定义和使用<br>    4)常量一旦被定义就不能被重新定义或者取消定义<br>    5)常量的值只能是bool, int, float, string类型<br>4.预定义常量<br>    预定义常量说白了就是我们的PHP内核已经帮我们定义好了的常量!<br>    其中有的预定义常量是一_开头的， 这些预定义常量我们又叫它魔术常量<br>    代码所在的位置不同他的值也是不同的，所以它加魔术常量<br>    八个常用的魔术常量<br>    预定义常量是不区分大小写的!</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/11/20/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95[4]-%E5%B8%B8%E9%87%8F/" data-id="cl1c3sz1e0005dov99gxjfwx4" data-title="PHP基本语法[4]-常量" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" rel="tag">PHP基本语法</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-PHP基本语法[3]-变量类型" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/11/20/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%5B3%5D-%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B/" class="article-date">
+  <time class="dt-published" datetime="2020-11-20T13:11:36.000Z" itemprop="datePublished">2020-11-20</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/PHP/">PHP</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/11/20/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%5B3%5D-%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B/">PHP基本语法[3]-变量类型</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>1.变量类型简介</p>
+<ol>
+<li>bool(布尔型)<br> $a&#x3D;true;<br> var_ _dump($a);<br> 往变量里面存true或者false，那么这个变量就是布尔型.</li>
+</ol>
+<p>2)int(整型)<br>    往变量里面存整数，那么这个变量就是整型变量.<br>3)float(浮点型，也称double)<br>    往变量里而存小数，那么这个变量就是浮点型数据.<br>    $a&#x3D;1.1;<br>    var_ <em>dump($a);<br>4)string(字符串)<br>    字符串就是一系列的字符组成串在一起.<br>1单引号:<br>    $b&#x3D;1;<br>    $a&#x3D; ‘test$bdwqd\ ‘wqdqw’;<br>    var</em> <em>dump($a);<br>    echo $a;<br>    在定义一些简单的字符串的时候使用单引号这种方法效率比较高.<br>2双引号<br>    $b&#x3D;100;<br>    $a&#x3D;’te$bst……’;<br>    $a&#x3D;”te{$b}st……”;<br>    var</em> dump($a);<br>    echo $a;<br>3定界符<br>    $b&#x3D;200;<br>    $a&#x3D;&lt;&lt;&lt;www<br>    dwqdqwdwq{$b}dwqdqdqdqdwqdwgcwcfwe fwefcscwecwe fwdqwdqde fwefwe fewfwe<br>    www;<br>    var_ dump($a);<br>5)array(数组)<br>    以后再讲!<br>6)object(对象)<br>    以后再讲!<br>7)resource(资源)<br>8)NULL<br>    nul1表示一一个变量没有值，表示空<br>    将变量直接赋值为null<br>    声明的变量尚未被赋值<br>    被unset函数销毁的变量<br>    $a&#x3D;1111;<br>    unset ($a);<br>    var_ dump($a);<br>2.变量类型相互转换<br>    这些呢都是程序运行中不太可控的部分所以在编写代码时最好不要涉及!!!<br>    强制转换:<br>    $a&#x3D;’游文埼’;<br>    $b&#x3D; (int)$a;<br>    var_ dump($a);<br>    var_ _dump ($b);</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/11/20/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95[3]-%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B/" data-id="cl1c3sz1a0004dov9b0bt75c5" data-title="PHP基本语法[3]-变量类型" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" rel="tag">PHP基本语法</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-PHP基本语法[2]-变量" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/11/18/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%5B2%5D-%E5%8F%98%E9%87%8F/" class="article-date">
+  <time class="dt-published" datetime="2020-11-18T08:03:51.000Z" itemprop="datePublished">2020-11-18</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/PHP/">PHP</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/11/18/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%5B2%5D-%E5%8F%98%E9%87%8F/">PHP基本语法[2]-变量</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>1.变量的声明<br>    声明:说白了就是实现告知、通知!<br>    在我们一些编程语言里面比如c语言使用变量之前要事先通知，事先声明一下!<br>    注意:在我们的HP程序里面使用变量之前是不需要声明的!<br>    变量用于存储数字、文本字符串或者数组这些数据!<br>    $变量名&#x3D;数据(值)<br>    “&#x3D;”在数学里面是、等于，的意思,在我们的程序语言里而，它不是等于号，它是赋值操作符。<br>2.变量的销毁<br>    unsets($变量名称)<br>3.变量的命名规则<br>    1)变量名称严格区分大写<br>    $name, $NAME, $Name都是不同的变量<br>    2)字母或者下划线开头<br>    后面接任意数量的字母数字下划线都可以!<br>    错误的命名方式:<br>    $1name<br>    错误点:以数字开头了<br>    $n ame<br>    错误点:中间有空白字符<br>总结一下:变量名只能包含字母数字下划线并且必须以字母或者下划线开头!<br>最好不要用一- 些关键字作为变量名称(因为在其他的编程语言里而是完全不被允许的)<br>4.可变变量<br>    &#x2F;&#x2F;可变变量<br>    $abc&#x3D;’test’;&#x2F;&#x2F;定义了- -个变量$abc里而存了值test<br>    $$abc&#x3D; ‘游文埼’ ;&#x2F;&#x2F;$test&#x3D;游文埼’;<br>    echo $test;<br>5.变量的引用赋值<br>    $a&#x3D;1000;<br>    &#x2F;<em>$b&#x3D;$a;&#x2F;&#x2F;相当于把$a的值，复制一份 再赋值给$b这个变量</em>&#x2F;<br>    $b&#x3D;&amp;$a;&#x2F;&#x2F;相当于给$a起了一个别名，操作其中任何一个，都会影响到另外一个变量的值!<br>    $b&#x3D;20;<br>    echo $a; 输出为20.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/11/18/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95[2]-%E5%8F%98%E9%87%8F/" data-id="cl1c3sz150001dov9fcnkcwmu" data-title="PHP基本语法[2]-变量" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" rel="tag">PHP基本语法</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-PHP基本语法[1]-初识PHP脚本程序" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/11/16/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%5B1%5D-%E5%88%9D%E8%AF%86PHP%E8%84%9A%E6%9C%AC%E7%A8%8B%E5%BA%8F/" class="article-date">
+  <time class="dt-published" datetime="2020-11-16T13:16:11.000Z" itemprop="datePublished">2020-11-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/PHP/">PHP</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/11/16/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%5B1%5D-%E5%88%9D%E8%AF%86PHP%E8%84%9A%E6%9C%AC%E7%A8%8B%E5%BA%8F/">PHP基本语法[1]-初识PHP脚本程序</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>1.PHP语言标记<br>    1)PHP开始标记<br>    <code>&lt;?php     2)PHP结束标记     ?&gt;</code><br>    <code>&lt;?php ?&gt;</code><br>    3)我们的页面最終是通过html, css, js来展示出一个炫丽的界面<br>    4)PHP代码可以嵌入到html代码中任何位置，并且可以嵌入任意多个<br>    5)文件末尾的?&gt;结束标志可以省略<br>2.指令分隔符”;”<br>    1)在一些PHP语句的结尾要加.上;表示- -句话的结束,当然也不需要可以的去记，因为你一旦<br>    |漏掉分号， 程序根本执行不了，会报错!<br>    2)结束标记?&gt;就隐含了一个;<br>    所以在?&gt;之前的PHP语句可以省略掉;<br>3.注释.<br>    1)多行注释<br>    &#x2F;*<br>    多行注释<br>    *&#x2F;<br>    2)单行注释<br>    &#x2F;&#x2F;单行注释<br>4.遇到空白的处理<br>    空格，tab制表符，换行这些写在咱们的PHP代码里面是没有问题的<br>    可以利用这些空白来增加我们代码的可读性!</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/11/16/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95[1]-%E5%88%9D%E8%AF%86PHP%E8%84%9A%E6%9C%AC%E7%A8%8B%E5%BA%8F/" data-id="cl1c3sz0z0000dov9h3gqdjql" data-title="PHP基本语法[1]-初识PHP脚本程序" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" rel="tag">PHP基本语法</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-PHP干货" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/11/06/PHP%E5%B9%B2%E8%B4%A7/" class="article-date">
+  <time class="dt-published" datetime="2020-11-06T11:20:36.000Z" itemprop="datePublished">2020-11-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/PHP/">PHP</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/11/06/PHP%E5%B9%B2%E8%B4%A7/">PHP高手干货</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>1、用单引号代替双引号来包含字符串，这样做会更快一些。因为PHP会在双引号包围的字符串中搜寻变量， 单引号则不会，注意：只有echo能这么做，它是一种可以把多个字符串当作参数的”函数”(译注：PHP手册中说echo是语言结构，不是真正的函数，故把函数加上了双引号)。<br>2、如果能将类的方法定义成static，就尽量定义成static，它的速度会提升将近4倍。<br>3、row[‘id′]的速度是row[id]的7倍。<br>4、echo 比 print 快，并且使用echo的多重参数(译注：指用逗号而不是句点)代替字符串连接，比如echo str1,str2。<br>5、在执行for循环之前确定最大循环数，不要每循环一次都计算最大值，最好运用foreach代替。<br>6、注销那些不用的变量尤其是大数组，以便释放内存。<br>7、尽量避免使用__get，__set，__autoload。<br>8、require_once()代价昂贵。<br>9、include文件时尽量使用绝对路径，因为它避免了PHP去include_path里查找文件的速度，解析操作系统路径所需的时间会更少。<br>10、如果你想知道脚本开始执行(译注：即服务器端收到客户端请求)的时刻，使用$_SERVER[‘REQUEST_TIME’]要好于time()<br>11、函数代替正则表达式完成相同功能。<br>12、str_replace函数比preg_replace函数快，但strtr函数的效率是str_replace函数的四倍。<br>13、如果一个字符串替换函数，可接受数组或字符作为参数，并且参数长度不太长，那么可以考虑额外写一段替换代码，使得每次传递参数是一个字符，而不是只写一行代码接受数组作为查询和替换的参数。<br>14、使用选择分支语句(译注：即switch case)好于使用多个if，else if语句。<br>15、用@屏蔽错误消息的做法非常低效，极其低效。<br>16、打开apache的mod_deflate模块，可以提高网页的浏览速度。<br>17、数据库连接当使用完毕时应关掉，不要用长连接。<br>18、错误消息代价昂贵。<br>19、在方法中递增局部变量，速度是最快的。几乎与在函数中调用局部变量的速度相当。<br>20、递增一个全局变量要比递增一个局部变量慢2倍。<br>21、递增一个对象属性(如：$this-&gt;prop++)要比递增一个局部变量慢3倍。<br>22、递增一个未预定义的局部变量要比递增一个预定义的局部变量慢9至10倍。<br>23、仅定义一个局部变量而没在函数中调用它，同样会减慢速度(其程度相当于递增一个局部变量)。PHP大概会检查看是否存在全局变量。<br>24、方法调用看来与类中定义的方法的数量无关，因为我(在测试方法之前和之后都)添加了10个方法，但性能上没有变化。<br>25、派生类中的方法运行起来要快于在基类中定义的同样的方法。<br>26、调用带有一个参数的空函数，其花费的时间相当于执行7至8次的局部变量递增操作。类似的方法调用所花费的时间接近于15次的局部变量递增操作。<br>27、Apache解析一个PHP脚本的时间要比解析一个静态HTML页面慢2至10倍。尽量多用静态HTML页面，少用脚本。<br>28、除非脚本可以缓存，否则每次调用时都会重新编译一次。引入一套PHP缓存机制通常可以提升25%至100%的性能，以免除编译开销。<br>29、尽量做缓存，可使用memcached。memcached是一款高性能的内存对象缓存系统，可用来加速动态Web应用程序，减轻数据库负载。对运算码 (OP code)的缓存很有用，使得脚本不必为每个请求做重新编译。<br>30、当操作字符串并需要检验其长度是否满足某种要求时，你想当然地会使用strlen()函数。此函数执行起来相当快，因为它不做任何计算， 只返回在zval 结构(C的内置数据结构，用于存储PHP变量)中存储的已知字符串长度。但是，由于strlen()是函数，多多少少会有些慢，因为函数调用会经过诸多步 骤，如字母小写化(译注：指函数名小写化，PHP不区分函数名大小写)、哈希查找，会跟随被调用的函数一起执行。在某些情况下，你可以使用isset() 技巧加速执行你的代码。<br>(举例如下)<br>if (strlen((foo) &lt; 5) { echo “Foo is too short”)$ }<br>(与下面的技巧做比较)<br>if (!isset((foo{5})) { echo “Foo is too short”)$ }<br>调用isset()恰巧比strlen()快，因为与后者不同的是，isset()作为一种语言结构，意味着它的执行不需要函数查找和字母小写化。也就是说，实际上在检验字符串长度的顶层代码中你没有花太多开销。<br>31、当执行变量i的递增或递减时，i++会比++i慢一些。这种差异是PHP特有的，并不适用于其他语言，所以请不要修改你的C或Java代码并指望它们能立即变快，没用的。++i更快是因为它只需要3条指令(opcodes)，$i++则需要4条指令。后置递增实际上会产生一个 临时变量，这个临时变量随后被递增。而前置递增直接在原值上递增。这是最优化处理的一种，正如Zend的PHP优化器所作的那样。牢记这个优化处理不失为 一个好主意，因为并不是所有的指令优化器都会做同样的优化处理，并且存在大量没有装配指令优化器的互联网服务提供商(ISPs)和服务器。<br>32、并不是事必面向对象(OOP)，面向对象往往开销很大，每个方法和对象调用都会消耗很多内存。<br>33、并非要用类实现所有的数据结构，数组也很有用。<br>34、不要把方法细分得过多，仔细想想你真正打算重用的是哪些代码?<br>35、当你需要时，你总能把代码分解成方法。<br>36、尽量采用大量的PHP内置函数。<br>37、如果在代码中存在大量耗时的函数，你可以考虑用C扩展的方式实现它们。<br>38、评估检验(profile)你的代码。检验器会告诉你，代码的哪些部分消耗了多少时间。Xdebug调试器包含了检验程序，评估检验总体上可以显示出代码的瓶颈。<br>39、mod_zip可作为Apache模块，用来即时压缩你的数据，并可让数据传输量降低80%。<br>40、在可以用file_get_contents替代file、fopen、feof、fgets等系列方法的情况下，尽量用 file_get_contents，因为他的效率高得多!但是要注意file_get_contents在打开一个URL文件时候的PHP版本问题；<br>41、尽量的少进行文件操作，虽然PHP的文件操作效率也不低的；<br>42、优化Select SQL语句，在可能的情况下尽量少的进行Insert、Update操作(在update上，我被恶批过)；<br>43、尽可能的使用PHP内部函数(但是我却为了找个PHP里面不存在的函数，浪费了本可以写出一个自定义函数的时间，经验问题啊!)<br>44、循环内部不要声明变量，尤其是大变量：对象(这好像不只是PHP里面要注意的问题吧?)；<br>45、多维数组尽量不要循环嵌套赋值；<br>46、在可以用PHP内部字符串操作函数的情况下，不要用正则表达式；<br>47、foreach效率更高，尽量用foreach代替while和for循环；<br>48、用单引号替代双引号引用字符串；<br>49、“用i+&#x3D;1代替i&#x3D;i+1。符合c&#x2F;c++的习惯，效率还高”；<br>50、对global变量，应该用完就unset()掉<br>注：以上文章为网上借鉴！！！！！</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/11/06/PHP%E5%B9%B2%E8%B4%A7/" data-id="cl1c3sz24000odov9hfpq4pub" data-title="PHP高手干货" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%B9%B2%E8%B4%A7/" rel="tag">干货</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
 
 
 </section>
@@ -129,18 +448,39 @@
           <aside id="sidebar">
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/PHP/">PHP</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" rel="tag">PHP基本语法</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B9%B2%E8%B4%A7/" rel="tag">干货</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" style="font-size: 20px;">PHP基本语法</a> <a href="/tags/%E5%B9%B2%E8%B4%A7/" style="font-size: 10px;">干货</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a></li></ul>
     </div>
   </div>
 
@@ -154,6 +494,22 @@
         
           <li>
             <a href="/2022/03/29/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2020/12/10/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%5B5%5D-%E8%BF%90%E7%AE%97%E7%AC%A6/">PHP基本语法[6]-运算符</a>
+          </li>
+        
+          <li>
+            <a href="/2020/12/01/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%5B5%5D-%E8%BF%90%E7%AE%97%E7%AC%A61/">PHP基本语法[5]-运算符1</a>
+          </li>
+        
+          <li>
+            <a href="/2020/11/20/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%5B4%5D-%E5%B8%B8%E9%87%8F/">PHP基本语法[4]-常量</a>
+          </li>
+        
+          <li>
+            <a href="/2020/11/20/PHP%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%5B3%5D-%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B/">PHP基本语法[3]-变量类型</a>
           </li>
         
       </ul>
